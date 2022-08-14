@@ -1,0 +1,17 @@
+/*MAPS*/
+
+$mapBotones:(botones1:grey, botones2:lightgrey);
+
+@each $boton, $color in $mapBotones {
+    .#{$boton} {
+        color: $color;
+    }
+}
+
+// MAP- GET
+$estilo:(color:black, text:center);
+
+.textoNosotros {
+    color: map-get($map: $estilo, $key: color );
+    text-align: map-get($map: $estilo, $key: text );
+     }

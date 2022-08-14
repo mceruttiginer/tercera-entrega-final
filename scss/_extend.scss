@@ -1,0 +1,20 @@
+/* EXTEND */
+.estilo1 {
+    font-size: $tam-fuente;
+    font-weight: bold;
+
+}
+
+.textoTarjetas {
+   @extend .estilo1;
+    text-align: center; 
+}
+  
+.textoCarrusel {
+    @extend .estilo1;
+    color: black; }
+  
+.tituloproductos {
+    @extend .estilo1;
+    text-transform: uppercase;
+    text-align: right; }

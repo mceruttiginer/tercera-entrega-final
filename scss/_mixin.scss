@@ -1,0 +1,9 @@
+/*MIXIN*/
+@mixin parrafos {
+    color: black;
+    text-align: center;
+}
+
+.textoNosotros {
+    @include parrafos;
+}
