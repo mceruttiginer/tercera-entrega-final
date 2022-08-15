@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 /* INDEX */
 body {
   background-color: #89b984; }
