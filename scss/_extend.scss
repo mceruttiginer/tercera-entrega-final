@@ -1,20 +1,42 @@
 /* EXTEND */
 .estilo1 {
-    font-size: $tam-fuente;
-    font-weight: bold;
-
+  font-size: $tam-fuente;
+  font-weight: bold;
 }
 
 .textoTarjetas {
-   @extend .estilo1;
-    text-align: center; 
+  @extend .estilo1;
+  text-align: center;
 }
-  
+
 .textoCarrusel {
-    @extend .estilo1;
-    color: black; }
-  
+  @extend .estilo1;
+  color: black;
+}
+
 .tituloproductos {
-    @extend .estilo1;
-    text-transform: uppercase;
-    text-align: right; }
+  @extend .estilo1;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.botones {
+  transition: all 0.2s;
+  text-decoration: none;
+  color: black;
+
+   &:hover {
+     background-color: darkgrey;
+     height: 60px;
+     width: 170px;
+     text-decoration: none;
+     color: black
+   }
+}
+
+.botones2 {
+  @extend .botones;
+}
+.botones1 {
+  @extend .botones;
+}

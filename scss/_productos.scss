@@ -5,10 +5,33 @@
     font-weight: bold;
     color: black;
   }
-  
   .tituloproductos {
     font-size: $tam-fuente;
     font-weight: bold;
     text-transform: uppercase;
     text-align: right;
   }
+.slide {
+  margin-top: 10px;
+  img {
+    height: 80vh;
+    width: 75vh;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .slide {
+    img {
+      height: 60vh;
+      width: 75vh;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .slide {
+    img {
+      height: 40vh;
+      width: 75vh;
+    }
+  }
+}
